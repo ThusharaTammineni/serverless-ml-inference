@@ -1,8 +1,7 @@
-\# Serverless Machine Learning Inference (AWS Lambda Simulation)
+Serverless Machine Learning Inference (AWS Lambda Simulation)
 
 
-
-\## Project Overview
+Project Overview
 
 This project demonstrates deployment of a lightweight machine learning inference
 
@@ -10,13 +9,13 @@ function using a serverless architecture similar to AWS Lambda behind API Gatewa
 
 
 
-Due to AWS account limitations, the solution is implemented as a \*\*local simulation\*\*
+Due to AWS account limitations, the solution is implemented as a local simulation
 
 that follows AWS Lambda’s execution model and request-response format.
 
 
 
-The core inference logic is written to be \*\*fully compatible with AWS Lambda\*\* and
+The core inference logic is written to be fully compatible with AWS Lambda and
 
 can be deployed directly without code changes.
 
@@ -26,7 +25,7 @@ can be deployed directly without code changes.
 
 
 
-\## Architecture
+Architecture
 
 Client (curl / Postman)  
 
@@ -41,8 +40,7 @@ Client (curl / Postman)
 ---
 
 
-
-\## Project Structure
+Project Structure
 
 ml\_inference\_local/
 
@@ -64,7 +62,7 @@ ml\_inference\_local/
 
 
 
-\## Model Details
+Model Details
 
 \- Algorithm: Logistic Regression
 
@@ -78,19 +76,19 @@ ml\_inference\_local/
 
 
 
-\## How to Run Locally
+How to Run Locally
 
 
 
-\### 1. Train the model
+1. Train the model
 
-```bash
+bash
 
 python train\_model.py
 
 
 
-2\. Start the API (simulated API Gateway)
+2. Start the API (simulated API Gateway)
 python app.py
 
 Server starts at:
@@ -132,4 +130,5 @@ Dependencies are listed in requirements.txt
 
 
 The project can be packaged into a Lambda deployment bundle without modification
+
 
